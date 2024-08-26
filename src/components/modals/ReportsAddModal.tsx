@@ -20,13 +20,21 @@
       throw new Error('No access token found');
     }
 
+    const organizationId = localStorage.getItem('organizationId');
+    const facilitatorId = localStorage.getItem('facilitatorId');
+    const requestData = {
+      ...data,
+      organizationId,
+      facilitatorId
+    };
+
     const response = await fetch(`${BASE_URL}/reports`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(requestData)
     });
 
     if (!response.ok) {

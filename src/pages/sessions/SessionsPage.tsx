@@ -85,18 +85,18 @@
         }
       };
 
-    const columns = [
-    { key: 'participantId', header: 'participant' },
-        { key: 'courseId', header: 'course' },
-        { key: 'sessionNumber', header: 'session_number' },
-        { key: 'week', header: 'week' },
-        { key: 'sessionDate', header: 'Session Date' },
-        { key: 'sessionTime', header: 'Session Time' },
-        { key: 'facilitatorId', header: 'facilitator' },
-        { key: 'organizationId', header: 'organization' },
-        { key: 'sessionStudentReview', header: 'student_review' },
-        { key: 'sessionFacilitatorReview', header: 'session_review' },
-    ];
+      const columns = [
+        { key: 'participant.firstName', header: 'participant' },
+            { key: 'course.name', header: 'course' },
+            { key: 'sessionNumber', header: 'session_number' },
+            { key: 'week', header: 'week' },
+            { key: 'sessionDate', header: 'Session Date' },
+            { key: 'sessionTime', header: 'Session Time' },
+            { key: 'facilitator.firstName', header: 'facilitator' },
+            // { key: 'organizationId', header: 'organization' },
+            // { key: 'sessionStudentReview', header: 'student_review' },
+            // { key: 'sessionFacilitatorReview', header: 'session_review' },
+        ];
   
     return (
         <NavbarSidebarLayout isFooter={false}>

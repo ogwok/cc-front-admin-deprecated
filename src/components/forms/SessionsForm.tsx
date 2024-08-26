@@ -91,21 +91,21 @@
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           
           <div>
-            <Label htmlFor="participantId">participantId</Label>
+            <Label htmlFor="participantId">participant</Label>
             <Select id="participantId" name="participantId" defaultValue={initialData.participantId} required>
-                      <option value="">Select participantId</option>
+                      <option value="">Select participant</option>
                       {participantIdOptions.map((option) => (
                         <option key={option.id} value={option.id}>
-                          {option.name}
+                          {option.firstName } {option.lastName }
                         </option>
                       ))}
                     </Select>
           </div>
         
           <div>
-            <Label htmlFor="courseId">courseId</Label>
+            <Label htmlFor="courseId">course</Label>
             <Select id="courseId" name="courseId" defaultValue={initialData.courseId} required>
-                      <option value="">Select courseId</option>
+                      <option value="">Select course</option>
                       {courseIdOptions.map((option) => (
                         <option key={option.id} value={option.id}>
                           {option.name}
@@ -146,7 +146,7 @@
                     />
           </div>
         
-          <div>
+          {/* <div>
             <Label htmlFor="facilitatorId">facilitatorId</Label>
             <TextInput id="facilitatorId" name="facilitatorId" type="text" defaultValue={initialData.facilitatorId} required />
           </div>
@@ -154,17 +154,17 @@
           <div>
             <Label htmlFor="organizationId">organizationId</Label>
             <TextInput id="organizationId" name="organizationId" type="text" defaultValue={initialData.organizationId} required />
-          </div>
-        
+          </div> */}
+{/*         
           <div>
             <Label htmlFor="sessionStudentReview">sessionStudentReview</Label>
-            <TextInput id="sessionStudentReview" name="sessionStudentReview" type="text" defaultValue={initialData.sessionStudentReview} required />
+            <TextInput id="sessionStudentReview" name="sessionStudentReview" type="text" defaultValue={initialData.sessionStudentReview}  />
           </div>
         
           <div>
             <Label htmlFor="sessionFacilitatorReview">sessionFacilitatorReview</Label>
-            <TextInput id="sessionFacilitatorReview" name="sessionFacilitatorReview" type="text" defaultValue={initialData.sessionFacilitatorReview} required />
-          </div>
+            <TextInput id="sessionFacilitatorReview" name="sessionFacilitatorReview" type="text" defaultValue={initialData.sessionFacilitatorReview}  />
+          </div> */}
         </div>
         <div className="mt-4">
           <Button type="submit" disabled={isLoading}>

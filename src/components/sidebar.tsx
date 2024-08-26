@@ -11,6 +11,11 @@ import {
   HiSearch,
   HiShoppingBag,
   HiViewGrid,
+  HiOutlineBookOpen,
+  HiPresentationChartLine,
+  HiUser,
+  HiDocumentReport,
+  HiUserGroup,
 } from "react-icons/hi";
 
 import { useSidebarContext } from "../context/SidebarContext";
@@ -65,7 +70,7 @@ const ExampleSidebar: FC = function () {
                 </Sidebar.Item>
               <Sidebar.Item
                   href="/courses/courses"
-                  icon={HiShoppingBag}
+                  icon={HiOutlineBookOpen}
                   className={
                     "/courses/courses" === currentPage
                       ? "bg-gray-100 dark:bg-gray-700"
@@ -76,7 +81,7 @@ const ExampleSidebar: FC = function () {
                 </Sidebar.Item>
 <Sidebar.Item
                   href="/sessions/sessions"
-                  icon={HiShoppingBag}
+                  icon={HiPresentationChartLine}
                   className={
                     "/sessions/sessions" === currentPage
                       ? "bg-gray-100 dark:bg-gray-700"
@@ -87,7 +92,7 @@ const ExampleSidebar: FC = function () {
                 </Sidebar.Item>
 <Sidebar.Item
                   href="/reports/reports"
-                  icon={HiShoppingBag}
+                  icon={HiDocumentReport}
                   className={
                     "/reports/reports" === currentPage
                       ? "bg-gray-100 dark:bg-gray-700"
@@ -98,7 +103,7 @@ const ExampleSidebar: FC = function () {
                 </Sidebar.Item>
 <Sidebar.Item
                   href="/participants/participants"
-                  icon={HiShoppingBag}
+                  icon={HiUserGroup}
                   className={
                     "/participants/participants" === currentPage
                       ? "bg-gray-100 dark:bg-gray-700"
@@ -109,7 +114,7 @@ const ExampleSidebar: FC = function () {
                 </Sidebar.Item>
 <Sidebar.Item
                   href="/facilitators/facilitators"
-                  icon={HiShoppingBag}
+                  icon={HiUser}
                   className={
                     "/facilitators/facilitators" === currentPage
                       ? "bg-gray-100 dark:bg-gray-700"

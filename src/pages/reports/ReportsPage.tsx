@@ -85,15 +85,15 @@
         }
       };
 
-    const columns = [
-    { key: 'facilitatorId', header: 'facilitator' },
-        { key: 'organizationId', header: 'organization' },
-        { key: 'sessionId', header: 'Session' },
-        { key: 'highlights', header: 'Highlights' },
-        { key: 'challenges', header: 'Challenges' },
-        { key: 'solutions', header: 'Solutions' },
-        { key: 'planForNextWeek', header: 'Plan For Next Week' },
-    ];
+      const columns = [
+        { key: 'facilitator.firstName', header: 'facilitator' },
+            // { key: 'organizationId', header: 'organization' },
+            { key: 'session.sessionDate', header: 'Session' },
+            { key: 'highlights', header: 'Highlights' },
+            { key: 'challenges', header: 'Challenges' },
+            { key: 'solutions', header: 'Solutions' },
+            { key: 'planForNextWeek', header: 'Plan For Next Week' },
+        ];
   
     return (
         <NavbarSidebarLayout isFooter={false}>

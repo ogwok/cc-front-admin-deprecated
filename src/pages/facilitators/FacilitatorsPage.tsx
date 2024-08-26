@@ -88,11 +88,11 @@
     const columns = [
     { key: 'firstName', header: 'First Name' },
         { key: 'lastName', header: 'Last Name' },
-        { key: 'phone', header: 'Phone' },
+        // { key: 'phone', header: 'Phone' },
         { key: 'email', header: 'Email' },
-        { key: 'password', header: 'Password' },
+        // { key: 'password', header: 'Password' },
         { key: 'role', header: 'Role' },
-        { key: 'organizationId', header: 'organization' },
+        // { key: 'organizationId', header: 'organization' },
     ];
   
     return (

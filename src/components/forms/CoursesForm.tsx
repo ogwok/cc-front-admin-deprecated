@@ -40,10 +40,10 @@
             <TextInput id="description" name="description" type="text" defaultValue={initialData.description} required />
           </div>
         
-          <div>
+          {/* <div>
             <Label htmlFor="organizationId">organizationId</Label>
             <TextInput id="organizationId" name="organizationId" type="text" defaultValue={initialData.organizationId} required />
-          </div>
+          </div> */}
         </div>
         <div className="mt-4">
           <Button type="submit" disabled={isLoading}>

@@ -88,7 +88,7 @@
     const columns = [
     { key: 'name', header: 'Name' },
         { key: 'description', header: 'Description' },
-        { key: 'organizationId', header: 'Organization' },
+        // { key: 'organizationId', header: 'Organization' },
     ];
   
     return (

@@ -58,23 +58,23 @@
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           
-          <div>
+          {/* <div>
             <Label htmlFor="facilitatorId">facilitatorId</Label>
             <TextInput id="facilitatorId" name="facilitatorId" type="text" defaultValue={initialData.facilitatorId} required />
-          </div>
+          </div> */}
         
-          <div>
+          {/* <div>
             <Label htmlFor="organizationId">organizationId</Label>
             <TextInput id="organizationId" name="organizationId" type="text" defaultValue={initialData.organizationId} required />
-          </div>
+          </div> */}
         
           <div>
-            <Label htmlFor="sessionId">sessionId</Label>
+            <Label htmlFor="sessionId">session</Label>
             <Select id="sessionId" name="sessionId" defaultValue={initialData.sessionId} required>
-                      <option value="">Select sessionId</option>
+                      <option value="">Select session</option>
                       {sessionIdOptions.map((option) => (
                         <option key={option.id} value={option.id}>
-                          {option.name}
+                          {option.sessionDate}
                         </option>
                       ))}
                     </Select>
